@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel do Administrador - Circuito Terê Verde</title>
+    <link rel="stylesheet" href="styleadm.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="top-bar">
+        <div class="logo-title">
+          <img src="./img/Nature on screen-bro.svg" alt="Logo" />
+          <h1>Circuito Terê Verde</h1>
+        </div>
+      </div>
+      <nav class="menu">
+        <ul id="nav">
+          <li><a href="index.html">voltar</a></li>
+          <li><a href="montanha.html">Parques</a></li>
+         
+          
+          
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container-admin">
+      <section class="intro-adin">
+        <h2>Bem-vindo, Administrador</h2>
+        <p>
+          Gerencie os eventos, trilhas e horários de funcionamento dos parques.
+        </p>
+      </section>
+
+      <div class="carrossel">
+      <div class="slide">
+        <h2>Gerenciar Eventos</h2>
+        <form class="form">
+          <label
+            >Nome do Evento:<br /><input
+              type="text"
+              name="evento"
+              required /></label
+          ><br /><br />
+          <label>Data:<br /><input type="date" name="data" required /></label
+          ><br /><br />
+          <label
+            >Descrição:<br /><textarea
+              name="descricao"
+              rows="4"
+            ></textarea></label
+          ><br /><br />
+          <button type="submit">Salvar Evento</button>
+        </form>
+      </div>
+
+      <div class="slide">
+        <h2>Disponibilidade de Parques</h2>
+        <form class="form">
+          <label
+            >Parque:<br />
+            <select name="parque">
+              <option value="serra">Serra dos Órgãos</option>
+              <option value="tres-picos">Três Picos</option>
+              <option value="montanhas">Montanhas de Teresópolis</option>
+            </select> </label
+          ><br /><br />
+          <label
+            >Horário de Funcionamento:<br /><input
+              type="text"
+              name="horario" /></label
+          ><br /><br />
+          <label
+            >Status:<br />
+            <select name="status">
+              <option value="aberto">Aberto</option>
+              <option value="fechado">Fechado</option>
+              <option value="manutencao">Em manutenção</option>
+            </select> </label
+          ><br /><br />
+          <button type="submit">Atualizar</button>
+      </div>
+
+      
+            
+
+      
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Circuito Terê Verde. Área Administrativa.</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const navLinks = document.getElementById("nav-links");
+        navLinks.classList.toggle("active");
+      }
+    </script>
+    <script>
+      window.addEventListener("load", function () {
+        window.scrollTo(0, 0);
+      });
+    </script>
+  </body>
+</html>
