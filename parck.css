@@ -19,7 +19,15 @@ body {
     margin-top: 10px;
   }
 }
-
+main {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background: #d7d7d9;
+}
 .header {
   position: fixed;
   top: 0;
@@ -100,4 +108,11 @@ main {
   padding: 30px 35px;
   background: #d7d7d9;
   text-align: center;
+}
+.footer {
+  background-color: #065f46;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
 }
