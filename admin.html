@@ -10,77 +10,73 @@
     <header class="header">
       <div class="top-bar">
         <div class="logo-title">
-         
           <h1>Circuito Terê Verde</h1>
         </div>
       </div>
       <nav class="menu">
         <ul id="nav">
           <li><a href="index.html">voltar</a></li>
-          <li><a href="montanha.html">Parques</a></li>              
+          <li><a href="montanha.html">Parques</a></li>
         </ul>
       </nav>
     </header>
-
-    <main class="container-admin">
-      <section class="intro-adin">
-        <h2>Bem-vindo, Administrador</h2>
-        <p>
-          Gerencie os eventos, trilhas e horários de funcionamento dos parques.
-        </p>
-      </section>
-
-      <div class="carrossel">
-      <div class="slide">
-        <h2>Gerenciar Eventos</h2>
-        <form class="form">
-          <label
-            >Nome do Evento:<br /><input
-              type="text"
-              name="evento"
-              required /></label
-          ><br /><br />
-          <label>Data:<br /><input type="date" name="data" required /></label
-          ><br /><br />
-          <label
-            >Descrição:<br /><textarea
-              name="descricao"
-              rows="4"
-            ></textarea></label
-          ><br /><br />
-          <button type="submit">Salvar Evento</button>
-        </form>
+    <!----------- inicio corpo--------->
+    <main>
+      <div class="topo">
+        <h1>Painel do Administrador</h1>
+        <p>Bem-vindo ao painel do administrador</p>
       </div>
 
-      <div class="slide">
-        <h2>Disponibilidade de Parques</h2>
-        <form class="form">
-          <label
-            >Parque:<br />
-            <select name="parque">
-              <option value="serra">Serra dos Órgãos</option>
-              <option value="tres-picos">Três Picos</option>
-              <option value="montanhas">Montanhas de Teresópolis</option>
-            </select> </label
-          ><br /><br />
-          <label
-            >Horário de Funcionamento:<br /><input
-              type="text"
-              name="horario" /></label
-          ><br /><br />
-          <label
-            >Status:<br />
-            <select name="status">
-              <option value="aberto">Aberto</option>
-              <option value="fechado">Fechado</option>
-              <option value="manutencao">Em manutenção</option>
-            </select> </label
-          ><br /><br />
-          <button type="submit">Atualizar</button>
-      </div>      
-                
-    </main>
+      <div class="card">
+        <div class="form-container">
+          <h2>Gerenciar Eventos</h2>
+          <form>
+            <label for="evento">Evento</label>
+            <input type="text" id="evento" name="evento" required />
 
+            <label for="data">Data</label>
+            <input type="date" id="data" name="data" required />
+
+            <label for="descricao">Descrição</label>
+            <textarea
+              id="descricao"
+              name="descricao"
+              rows="4"
+              required
+            ></textarea>
+
+            <button type="submit">Salvar</button>
+          </form>
+        </div>
+        <div class="form-container">
+          <h2>Disponibilidade</h2>
+          <form>
+            <label for="parque">Parque</label>
+            <select id="parque" name="parque" required>
+              <option value="">Selecione um parque</option>
+              <option value="Parque Central">Serra dos Órgãos</option>
+              <option value="Parque da Cidade">Três Picos</option>
+              <option value="Parque das Flores">
+                Montanhas de Teresópolis
+              </option>
+            </select>
+
+            <label for="horario">Horário</label>
+            <input type="time" id="horario" name="horario" required />
+
+            <label for="status">Status</label>
+            <select id="status" name="status" required>
+              <option value="">Selecione o status</option>
+              <option value="Disponível">Aberto</option>
+              <option value="Indisponível">Fechado</option>
+            </select>
+
+            <button class="btn1" ctype="submit">Atualizar</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!----------- fim corpo--------->
     <footer class="footer">
       <p>&copy; 2025 Circuito Terê Verde. Área Administrativa.</p>
     </footer>
