@@ -1,0 +1,134 @@
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: rgb(10, 10, 10);
+}
+
+body {
+  background: url("./img/imagem.jpg");
+  background-size: cover;
+}
+
+header {
+  width: 1140px; /* Provavelmente faltou px aqui */
+  max-width: 80%;
+  margin: auto;
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 100;
+}
+/* Link do cabeçalho */
+header a {
+  color: #eee;
+  margin-right: 40px;
+  font-weight: 300;
+}
+/* Link do cabeçalho ao passar o mouse */
+nav {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  display: flex;
+}
+/* Links de navegação */
+nav a {
+  color: #eee;
+  text-decoration: none;
+  padding: 0px 50px 10px 0;
+  position: relative;
+}
+/* Efeito de linha abaixo dos links */
+nav a::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #eee;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* Efeito de hover nos links de navegação */
+nav a:hover::after {
+  color: #eee;
+  width: 50%;
+  transition: 0.5s ease-in-out;
+}
+/* Área central transparente */
+.container {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* fundo branco com transparência */
+  padding: 40px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px); /* efeito de desfoque */
+  margin-top: 50px;
+}
+.form-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  padding: 0px;
+  text-align: center;
+  margin-top: 0;
+}
+.form-container h3 {
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+.form-container p {
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.container h1 {
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+.container p {
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+/* Estilo dos formulários */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 200px;
+}
+
+input,
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
