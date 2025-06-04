@@ -27,15 +27,37 @@
         <div class="form-container">
           <form>
             <h3>Gerenciar Eventos</h3>
+            <!-- CAMPO NOME DO EVENTO -->
             <label for="hora">Evento:</label>
             <input type="text" placeholder="Evento" />
+            <!-- CAMPO ESCOLHA PARQUE -->
+            <label for="item">Escolha o parque:</label>
+            <select id="item" name="item" required>
+              <option value="">-- Selecione --</option>
+              <option value="item1">Serra dos Orgãos</option>
+              <option value="item2">Tres Picos</option>
+              <option value="item3">Montanhas de Teresópolis</option>
+            </select>
+            <!-- CAMPO DATA -->
             <label for="hora">Data do evento:</label>
             <input type="date" placeholder="#" />
-            <label for="hora">Início:</label>
-            <input type="time" name="hora" />
-            <label for="hora">Término:</label>
-            <input type="time" name="hora" />
-
+            <!-- CAMPO horario -->
+            <div class="time">
+              <div class="time-inicio">            
+                <label for="hora">Início:</label>
+                <input type="time" name="hora" />
+              </div>              
+              <div class="time-fim">
+                  <label for="hora">Término:</label>                
+                  <input type="time" name="hora" />
+              </div>
+            </div>
+            <!-- CAMPO ESCOLHA FOTO -->
+             <label for="foto">Escolher Foto:</label>
+             <div class="file-foto">
+               
+               <input type="file" id="foto" name="foto" accept="image/*" required>
+            </div>
             <button type="submit">Salvar</button>
           </form>
 
