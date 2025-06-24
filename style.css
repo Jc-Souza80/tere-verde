@@ -343,6 +343,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+/*popup styles */
 .popup {
   display: none;
   position: fixed;

@@ -47,7 +47,7 @@ function moveItemsOnClick(type) {
     container.classList.remove("back");
   }, 500); // ajuste conforme a duração da animação no CSS
 }
-
+/* Funções para abrir e fechar o popup de login*/
 function abrirPopup() {
   document.getElementById("popup").style.display = "flex";
 }
@@ -55,12 +55,12 @@ function abrirPopup() {
 function fecharPopup() {
   document.getElementById("popup").style.display = "none";
 }
-
+/* Função para validar o login */
 function validarLogin() {
   const usuario = document.getElementById("usuario").value;
   const senha = document.getElementById("senha").value;
 
-  if (usuario === "admin" && senha === "1234") {
+  if (usuario === "Admin" && senha === "Admin") {
     window.location.href = "adm.html";
   } else {
     alert("Usuário ou senha incorretos!");
